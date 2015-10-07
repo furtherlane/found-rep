@@ -38,3 +38,162 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+
+/****** SN ADDED ******/
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.search-section {
+	background: #333 none repeat scroll 0% 0%; 
+	margin-left: 0px;
+}
+
+.search-section div ul {
+	margin: 0rem .5rem .15rem .5rem
+}
+
+.search-icon-link {
+	width: 45px;
+	height: 45px;
+	padding-left: 7px;
+}
+
+a.search-icon-link .fi-magnifying-glass {
+	color: #ffffff;
+}
+
+
+div.search-wrap {
+	padding: 0.25rem;
+}
+
+i#search {
+  font-size: 28px;
+  position: relative;
+  float: left;
+  width: 75px;
+  height: 1px;
+  top: -40px;
+  left: 8px;
+  color: #999999;
+}
+
+/* STYLE INPUT PLACEHOLDER */
+input:-moz-placeholder { color:#4C4C4C; }
+::-webkit-input-placeholder { color: #4C4C4C; }
+:-moz-placeholder {
+   color: #4C4C4C;  //FF 18-
+}
+::-moz-placeholder {
+   color: #4C4C4C;  //FF 19+
+}
+:-ms-input-placeholder {  
+   color: #4C4C4C;  
+}
+
+
+
+input[type="text"].search-bar {
+	background: transparent linear-gradient(#CCC, #FFF) repeat scroll 0% 0%;	
+	border: 0px none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+	box-sizing: border-box;
+	color: #000;
+display: inline;	
+	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+	font-size: 13px;
+	font-weight: 400px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+	outline: 0px none;
+	padding-left: 40px;
+	width: 100%;
+
+	transition-delay: 0s;
+	transition-duration: 0s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+
+input[type="text"].search-bar:focus {
+	background: #FFF none repeat scroll 0% 0%;
+    border: 0px none;
+    border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+	box-sizing: border-box;
+	color: #000000;
+display: inline;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+	font-size: 13px;
+	margin: 0px 0px 0px 0px;
+	outline: 0px none;
+    width: 100%;
+}
+
+/* CSS FOR MENU "X" */
+
+#menu-icon-section.left-small.open {
+    background: #4679BD none repeat scroll 0% 0%;
+}
+
+#menu-label {
+    background: #4679BD none repeat scroll 0% 0%;
+    color: #FFFFFF;
+}
+
+.left-small {
+border: none !important;
+}
+
+aside.left-off-canvas-menu {
+background:  #4679BD none repeat scroll 0% 0%;
+}
+
+
+.tab-bar .menu-icon.open {
+    width:40px;
+    height:40px;
+    position:absolute;
+    box-shadow: none !important;
+    content: "";
+}
+
+.tab-bar .menu-icon.open:before,.tab-bar .menu-icon.open:after{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:1.75px;
+    background-color:white;
+    top:18px;
+}
+
+.tab-bar .menu-icon.open:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:10px;
+}
+.tab-bar .menu-icon.open:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:10px;
+}
+
+tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
+	box-shadow: none;
+}
+
