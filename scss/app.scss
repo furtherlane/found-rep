@@ -57,6 +57,9 @@
 .search-section {
 	background: #333 none repeat scroll 0% 0%; 
 	margin-left: 0px;
+	display: block;
+	width: 100%;
+//	position: absolute !important;
 }
 
 .search-section div ul {
@@ -72,6 +75,22 @@
 a.search-icon-link .fi-magnifying-glass {
 	color: #ffffff;
 }
+
+
+ul#search-button-list {
+	line-height: 45px;
+	margin: 0rem;
+}
+
+ul#search-button-list li {
+	margin: 0px;
+}
+
+a#search-button {
+	color: #000000;
+	padding-right: 20px;
+}
+
 
 
 div.search-wrap {
@@ -103,8 +122,8 @@ input:-moz-placeholder { color:#4C4C4C; }
 }
 
 
-
-input[type="text"].search-bar {
+/*
+input[type='text'].search-bar {
 	background: transparent linear-gradient(#CCC, #FFF) repeat scroll 0% 0%;	
 	border: 0px none;
 	border-radius: 5px;
@@ -126,9 +145,10 @@ display: inline;
 	transition-property: all;
 	transition-timing-function: ease;
 }
+*/
 
-
-input[type="text"].search-bar:focus {
+//input[type='text'].search-bar:focus {
+input[type='text'].search-bar {
 	background: #FFF none repeat scroll 0% 0%;
     border: 0px none;
     border-radius: 5px;
@@ -137,9 +157,10 @@ input[type="text"].search-bar:focus {
 	color: #000000;
 display: inline;
 	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	margin: 0px 0px 0px 0px;
 	outline: 0px none;
+	padding-left: 40px;
     width: 100%;
 }
 
@@ -156,12 +177,56 @@ display: inline;
 
 .left-small {
 border: none !important;
+position: absolute !important; //otherwise addt'l space added below tab-bar
 }
 
 aside.left-off-canvas-menu {
 background:  #4679BD none repeat scroll 0% 0%;
 }
 
+//Modify tab-bar color
+.tab-bar {
+	background: #FFFFFF none repeat scroll;
+	border-top: 3px solid rgb(70, 121, 189);
+	border-bottom: 3px solid rgb(70, 121, 189);
+	height: 3.1rem !important;
+}
+
+.tab-bar-section.middle {
+	padding-left: .25rem;
+}
+
+@media only screen and (min-width: 40.0625em) { 
+
+	.tab-bar-section.middle {
+  		left: 0rem;
+		right: 0rem;
+		padding-left: .25rem;
+	}
+	
+	.search-section {
+		display: none !important;
+	}	
+}	
+	
+
+.tab-bar-section div#logo {
+	padding: 2px 0px !important;
+}
+
+.tab-bar-section div#logo img#headphone-logo {
+	vertical-align: top;
+}
+
+.tab-bar-section div#logo img#letters-logo {
+	vertical-align: middle;
+	padding-bottom: .75rem;
+}
+
+
+.tab-bar .menu-icon span::after {
+	box-shadow: 0px 0px 0px 2px #000, 0px 7px 0px 2px #000, 0px 14px 0px 2px #000;
+}
 
 .tab-bar .menu-icon.open {
     width:40px;
@@ -197,3 +262,12 @@ tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
 	box-shadow: none;
 }
 
+ul#nav-list {
+	line-height: 45px;
+}
+
+.main-section {
+	text-align: left; 
+	margin: 10px;
+	padding: 0.5rem 1rem;
+}
