@@ -12,5 +12,7 @@ $("#search-button").click(function(){
 //	$(".search-section").toggleClass("open");
 //	$(".search-section").slideToggle("fast", "linear");
 	$(".search-section").toggle();
+	$("a#search-button").toggleClass("triangle");
+	$("a#search-button").toggleClass("no-triangle");
 	$("input[type='text'].search-bar").focus();
 })
