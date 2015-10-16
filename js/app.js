@@ -2,17 +2,24 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+/* menu icon toggle */
 $(".tab-bar .menu-icon").click(function() {
 	$(this).toggleClass( "open" );
 	$("#menu-icon-section").toggleClass("open");
 });
 
+
+/* search icon toggle */
 $("#search-button").click(function(){
-//	$(this).toggleClass("open");
-//	$(".search-section").toggleClass("open");
-//	$(".search-section").slideToggle("fast", "linear");
-	$(".search-section").toggle();
+	
+	if($(".search-section.noshow")) {
+		$(".search-section").toggleClass("noshow");		
+	}
+	else {
+		$(".search-section").toggleClass("noshow");		
+	}
+	
 	$("a#search-button").toggleClass("triangle");
 	$("a#search-button").toggleClass("no-triangle");
 	$("input[type='text'].search-bar").focus();
-})
+});

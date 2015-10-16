@@ -9490,51 +9490,70 @@ th.hide-for-touch {
   font-size: 72px;
 }
 
-/* line 57, ../scss/app.scss */
-.search-section {
-  background: #333 none repeat scroll 0% 0%;
-  margin-left: 0px;
-  display: none;
-  width: 100%;
+/* line 58, ../scss/app.scss */
+.ad-section div.ad-wrap img {
+  display: block;
+  margin: auto;
+  padding: 0px;
 }
 
 /* line 65, ../scss/app.scss */
+.search-section {
+  background: #333 none repeat scroll 0% 0%;
+  margin-left: 0px;
+  display: block;
+  visibility: visible;
+  width: 100%;
+  height: 39px;
+}
+
+/* line 75, ../scss/app.scss */
+.search-section.noshow {
+  background: #333 none repeat scroll 0% 0%;
+  margin-left: 0px;
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: 0px;
+}
+
+/* line 88, ../scss/app.scss */
 .search-section div ul {
   margin: 0rem;
   list-style: none;
 }
 
-/* line 71, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .search-icon-link {
   width: 45px;
   height: 45px;
   padding-left: 7px;
 }
 
-/* line 77, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 a.search-icon-link .fi-magnifying-glass {
   color: #ffffff;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 ul#search-button-list {
   line-height: 45px;
   margin: 0rem;
 }
 
-/* line 88, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 ul#search-button-list li {
   margin: 0px;
 }
 
-/* line 92, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 a#search-button {
   color: #000000;
   width: 60px;
 }
 
 /* Create Focus Triangle on search icon */
-/* line 101, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 a#search-button:before, a#search-button:after {
   content: " ";
   height: 0px;
@@ -9543,12 +9562,12 @@ a#search-button:before, a#search-button:after {
   z-index: 2;
 }
 
-/* line 110, ../scss/app.scss */
+/* line 133, ../scss/app.scss */
 a#search-button.no-triangle i {
   padding-left: 20px !important;
 }
 
-/* line 115, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 a#search-button.triangle:before {
   content: " ";
   height: 0px;
@@ -9561,7 +9580,7 @@ a#search-button.triangle:before {
   left: 35%;
 }
 
-/* line 128, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 a#search-button.triangle:after {
   content: " ";
   height: 0px;
@@ -9575,7 +9594,7 @@ a#search-button.triangle:after {
   bottom: -6px;
 }
 
-/* line 146, ../scss/app.scss */
+/* line 169, ../scss/app.scss */
 i#search {
   font-size: 28px;
   position: relative;
@@ -9588,32 +9607,32 @@ i#search {
 }
 
 /* STYLE INPUT PLACEHOLDER */
-/* line 158, ../scss/app.scss */
+/* line 181, ../scss/app.scss */
 input:-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 159, ../scss/app.scss */
+/* line 182, ../scss/app.scss */
 ::-webkit-input-placeholder {
   color: #4C4C4C;
 }
 
-/* line 160, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 :-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 163, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 ::-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 166, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 :-ms-input-placeholder {
   color: #4C4C4C;
 }
 
-/* line 172, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 input[type='text'].search-bar {
   background: #FFF none repeat scroll 0% 0%;
   border: 0px none;
@@ -9630,29 +9649,29 @@ input[type='text'].search-bar {
 }
 
 /* CSS FOR MENU "X" */
-/* line 192, ../scss/app.scss */
+/* line 215, ../scss/app.scss */
 #menu-icon-section.left-small.open {
   background: #4679BD none repeat scroll 0% 0%;
 }
 
-/* line 196, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 #menu-label {
   background: #4679BD none repeat scroll 0% 0%;
   color: #FFFFFF;
 }
 
-/* line 201, ../scss/app.scss */
+/* line 224, ../scss/app.scss */
 .left-small {
   border: none !important;
   position: absolute !important;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 229, ../scss/app.scss */
 aside.left-off-canvas-menu {
   background: #4679BD none repeat scroll 0% 0%;
 }
 
-/* line 211, ../scss/app.scss */
+/* line 234, ../scss/app.scss */
 .tab-bar {
   background: #FFFFFF none repeat scroll;
   border-top: 3px solid #4679bd;
@@ -9660,46 +9679,46 @@ aside.left-off-canvas-menu {
   height: 3.1rem !important;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 241, ../scss/app.scss */
 .tab-bar-section.middle {
   padding-left: .25rem;
 }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 224, ../scss/app.scss */
+  /* line 247, ../scss/app.scss */
   .tab-bar-section.middle {
     left: 0rem;
     right: 0rem;
     padding-left: .25rem;
   }
 
-  /* line 230, ../scss/app.scss */
+  /* line 253, ../scss/app.scss */
   .search-section {
     display: none !important;
   }
 }
-/* line 236, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .tab-bar-section div#logo {
   padding: 2px 0px !important;
 }
 
-/* line 240, ../scss/app.scss */
+/* line 263, ../scss/app.scss */
 .tab-bar-section div#logo img#headphone-logo {
   vertical-align: top;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 267, ../scss/app.scss */
 .tab-bar-section div#logo img#letters-logo {
   vertical-align: middle;
   padding-bottom: .75rem;
 }
 
-/* line 250, ../scss/app.scss */
+/* line 273, ../scss/app.scss */
 .tab-bar .menu-icon span::after {
   box-shadow: 0px 0px 0px 2px #000, 0px 7px 0px 2px #000, 0px 14px 0px 2px #000;
 }
 
-/* line 254, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 .tab-bar .menu-icon.open {
   width: 40px;
   height: 40px;
@@ -9708,7 +9727,7 @@ aside.left-off-canvas-menu {
   content: "";
 }
 
-/* line 262, ../scss/app.scss */
+/* line 285, ../scss/app.scss */
 .tab-bar .menu-icon.open:before, .tab-bar .menu-icon.open:after {
   content: '';
   position: absolute;
@@ -9718,7 +9737,7 @@ aside.left-off-canvas-menu {
   top: 18px;
 }
 
-/* line 271, ../scss/app.scss */
+/* line 294, ../scss/app.scss */
 .tab-bar .menu-icon.open:before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -9726,7 +9745,7 @@ aside.left-off-canvas-menu {
   left: 10px;
 }
 
-/* line 277, ../scss/app.scss */
+/* line 300, ../scss/app.scss */
 .tab-bar .menu-icon.open:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -9734,17 +9753,17 @@ aside.left-off-canvas-menu {
   right: 10px;
 }
 
-/* line 284, ../scss/app.scss */
+/* line 307, ../scss/app.scss */
 tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
   box-shadow: none;
 }
 
-/* line 288, ../scss/app.scss */
+/* line 311, ../scss/app.scss */
 ul#nav-list {
   line-height: 45px;
 }
 
-/* line 292, ../scss/app.scss */
+/* line 315, ../scss/app.scss */
 .main-section {
   text-align: left;
   margin: 10px;
