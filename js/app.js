@@ -23,3 +23,6 @@ $("#search-button").click(function(){
 	$("a#search-button").toggleClass("no-triangle");
 	$("input[type='text'].search-bar").focus();
 });
+
+/* call superfish 1.7.4 menu function */
+jQuery('ul#nav-list.sf-menu').superfish();

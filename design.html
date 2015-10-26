@@ -6,9 +6,12 @@
     <!-- if you remove this meta tag, the NSA will spy on you through your Xbox Kinect camera -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  	<title>SAME THAT TUNE - RESPONSIVE</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+	<link href="superfish/dist/css/superfish.css" rel="stylesheet" media="screen">
     <script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="superfish/dist/js/hoverIntent.js"></script>
+	<script src="superfish/dist/js/superfish.js"></script>
   </head>
 
   <body>
@@ -21,11 +24,11 @@
 </section>
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
+  <div id="border-top"></div>
     <nav class="tab-bar">
       <section id="menu-icon-section" class="left-small">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
       </section>
-
       <section class="middle tab-bar-section">
       		<div id="logo" class="left">
       			<img id="headphone-logo" src="images/stt_logo_FlattenBICShrprFirst_53x40.png" width="53px" height="40px">
@@ -33,22 +36,62 @@
 				<img id="letters-logo" class="hidden-for-small" src="images/stt_letters_FlattenBICShrprFirst_175x22.png" width="175px" height="22px">
 			</div>
       </section>
-
-      <section class="right">
-		<ul id="nav-list" class="inline-list hide-for-small-only">
-			<li><a href="#"><i class="step fi-home size-24"></i></a></li>
+      <section class="right">      
+		<ul id="nav-list" class="sf-menu hide-for-small-only">
+			<li><a href="#"><i class="step fi-home size-18"></i></a></li>
             <li><a href="#">Post A Comparison!</a></li>
             <li><a href="#">Filter Posts</a></li>
         	<li><a href="#">About</a></li>
+<!--  START SUPERFISH -->						
+			<li class="current">
+				<a href="followed.html">menu item 1</a>
+				<ul>
+					<li>
+						<a href="followed.html">menu item</a>
+					</li>
+					<li class="current">
+						<a href="followed.html">long menu item sets sub width</a>
+						<ul>
+							<li class="current"><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+<!--  END SUPERFISH -->			
         	<li><a href="#">Feedback</a></li>
         	<li><a href="#">Sign In</a></li>
-			<li><a class="search-icon-link right" href="#"><i class="step fi-share size-24"></i></a></li>
+			<li><a class="search-icon-link right" href="#"><i class="step fi-share size-24"></i></a></li>			
 		</ul>
 		<ul id="search-button-list" class="inline-list show-for-small">
 			<li><a id="search-button" class="right no-triangle" href="#"><i class="step fi-magnifying-glass size-24"></i></a></li>
 		</ul>
       </section>
     </nav>
+      <div id="border-bottom"></div>
 	<section class="search-section noshow">
 		<div class="row">
 			<ul>
@@ -65,8 +108,7 @@
 	</section>
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        <li><label id="menu-label">MENU</label>
-        </li>
+        <li><label id="menu-label">MENU</label></li>
         <li><a href="#">Post A Comparison!</a></li>
         <li><a href="#">Filter Posts</a></li>
        	<li><a href="#">About</a></li>
@@ -78,19 +120,18 @@
 		<div class="highlight">Thanks for posting!  Please add a video. Not sure what the message will be yet, but it could be very long.  Yes?</div>
 	</section>    
     <section class="main-section">
-		<p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.
+   		<p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.
 		</p>
 		<p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members.
 		</p>
-    </section>
+    </section>    
   </div>
 </div>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
 <script>
-  $(document).foundation();  
+  $(document).foundation();   
 </script>
   </body>
 

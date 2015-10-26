@@ -1,43 +1,46 @@
+/*
 @import "settings";
 @import "foundation";
+*/
 
+/* inline-lists causes issues with superfish menus e.g. overflow and line-height */
 // Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+@import
+   "foundation/components/accordion",
+   "foundation/components/alert-boxes",
+   "foundation/components/block-grid",
+   "foundation/components/breadcrumbs",
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/clearing",
+   "foundation/components/dropdown",
+   "foundation/components/dropdown-buttons",
+   "foundation/components/flex-video",
+   "foundation/components/forms",
+   "foundation/components/grid",
+   "foundation/components/inline-lists",
+   "foundation/components/joyride",
+   "foundation/components/keystrokes",
+   "foundation/components/labels",
+   "foundation/components/magellan",
+   "foundation/components/orbit",
+   "foundation/components/pagination",
+   "foundation/components/panels",
+   "foundation/components/pricing-tables",
+   "foundation/components/progress-bars",
+   "foundation/components/reveal",
+   "foundation/components/side-nav",
+   "foundation/components/split-buttons",
+   "foundation/components/sub-nav",
+   "foundation/components/switches",
+   "foundation/components/tables",
+   "foundation/components/tabs",
+   "foundation/components/thumbs",
+   "foundation/components/tooltips",
+   "foundation/components/top-bar",
+   "foundation/components/type",
+   "foundation/components/offcanvas",
+   "foundation/components/visibility";
 
 
 
@@ -147,7 +150,7 @@ a.search-icon-link .fi-magnifying-glass {
 
 
 ul#search-button-list {
-	line-height: 45px;
+	line-height: 46px;
 	margin: 0rem;
 }
 
@@ -276,9 +279,9 @@ background:  #4679BD none repeat scroll 0% 0%;
 //Modify tab-bar color
 .tab-bar {
 	background: #FFFFFF none repeat scroll;
-	border-top: 3px solid rgb(70, 121, 189);
-	border-bottom: 3px solid rgb(70, 121, 189);
-	height: 3.1rem !important;
+//	border-top: 3px solid rgb(70, 121, 189);
+//	border-bottom: 3px solid rgb(70, 121, 189);
+//	height: 3.1rem !important;
 }
 
 .tab-bar-section.middle {
@@ -286,6 +289,7 @@ background:  #4679BD none repeat scroll 0% 0%;
 }
 
 @media only screen and (min-width: 40.0625em) { 
+//@media only screen and (min-width: 63.313em) { 
 
 	.tab-bar-section.middle {
   		left: 0rem;
@@ -351,12 +355,41 @@ tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
 	box-shadow: none;
 }
 
+nav.tab-bar {
+	max-width: 1360px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+div#border-top {
+	border-bottom: 3px solid #4679BD;
+}
+div#border-bottom {
+	border-top: 3px solid #4679BD;
+}
+
+
+/* adjustments for Superfish menus */
 ul#nav-list {
-	line-height: 45px;
+	line-height: 18px !important;
+	overflow: visible;
+}
+
+ul#nav-list > li {
+	background: #ffffff;
+}
+
+ul#nav-list > li:hover {
+	background: #CFDEFF none repeat scroll 0% 0%;
+}
+
+ul#nav-list ul ul li, #ul#nav-list ul ul ul li {
+	line-height: 18px;
 }
 
 .main-section {
 	text-align: left; 
 	margin: 10px;
 	padding: 0.5rem 1rem;
+	min-height: 300px;
 }
