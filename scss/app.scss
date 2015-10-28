@@ -265,6 +265,8 @@ box-shadow: none !important;
 #menu-label {
     background: #4679BD none repeat scroll 0% 0%;
     color: #FFFFFF;
+    padding: 15px;
+    cursor: default !important;
 }
 
 .left-small {
@@ -288,8 +290,8 @@ background:  #4679BD none repeat scroll 0% 0%;
 	padding-left: .25rem;
 }
 
-@media only screen and (min-width: 40.0625em) { 
-//@media only screen and (min-width: 63.313em) { 
+//@media only screen and (min-width: 40.0625em) { 
+@media only screen and (min-width: 63.313em) { 
 
 	.tab-bar-section.middle {
   		left: 0rem;
@@ -300,6 +302,11 @@ background:  #4679BD none repeat scroll 0% 0%;
 	.search-section {
 		display: none !important;
 	}	
+
+	/* to handle expanded browser when left-off-canvas is already open */
+	.move-right > .inner-wrap {
+    	transform: none;
+	}
 }	
 	
 
@@ -369,7 +376,7 @@ div#border-bottom {
 }
 
 
-/* adjustments for Superfish menus */
+/* adjustments for Horizontal Superfish menus */
 ul#nav-list {
 	line-height: 18px !important;
 	overflow: visible;
@@ -385,6 +392,24 @@ ul#nav-list > li:hover {
 
 ul#nav-list ul ul li, #ul#nav-list ul ul ul li {
 	line-height: 18px;
+}
+
+/* adjustments for Vertical Superfish menus */
+aside.left-off-canvas-menu {
+	overflow-x: visible !important;
+	overflow-y: visible !important;
+}
+aside.left-off-canvas-menu .sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 100%;
+	z-index: 99;
+}
+
+ul.off-canvas-list li {
+	width: 250px;
+	float: left !important;
 }
 
 .main-section {

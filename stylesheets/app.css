@@ -9160,64 +9160,72 @@ input[type='text'].search-bar {
 #menu-label {
   background: #4679BD none repeat scroll 0% 0%;
   color: #FFFFFF;
+  padding: 15px;
+  cursor: default !important;
 }
 
-/* line 270, ../scss/app.scss */
+/* line 272, ../scss/app.scss */
 .left-small {
   border: none !important;
   position: absolute !important;
 }
 
-/* line 275, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 aside.left-off-canvas-menu {
   background: #4679BD none repeat scroll 0% 0%;
 }
 
-/* line 280, ../scss/app.scss */
+/* line 282, ../scss/app.scss */
 .tab-bar {
   background: #FFFFFF none repeat scroll;
 }
 
-/* line 287, ../scss/app.scss */
+/* line 289, ../scss/app.scss */
 .tab-bar-section.middle {
   padding-left: .25rem;
 }
 
-@media only screen and (min-width: 40.0625em) {
-  /* line 294, ../scss/app.scss */
+@media only screen and (min-width: 63.313em) {
+  /* line 296, ../scss/app.scss */
   .tab-bar-section.middle {
     left: 0rem;
     right: 0rem;
     padding-left: .25rem;
   }
 
-  /* line 300, ../scss/app.scss */
+  /* line 302, ../scss/app.scss */
   .search-section {
     display: none !important;
   }
+
+  /* to handle expanded browser when left-off-canvas is already open */
+  /* line 307, ../scss/app.scss */
+  .move-right > .inner-wrap {
+    transform: none;
+  }
 }
-/* line 306, ../scss/app.scss */
+/* line 313, ../scss/app.scss */
 .tab-bar-section div#logo {
   padding: 2px 0px !important;
 }
 
-/* line 310, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 .tab-bar-section div#logo img#headphone-logo {
   vertical-align: top;
 }
 
-/* line 314, ../scss/app.scss */
+/* line 321, ../scss/app.scss */
 .tab-bar-section div#logo img#letters-logo {
   vertical-align: middle;
   padding-bottom: .75rem;
 }
 
-/* line 320, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 .tab-bar .menu-icon span::after {
   box-shadow: 0px 0px 0px 2px #000, 0px 7px 0px 2px #000, 0px 14px 0px 2px #000;
 }
 
-/* line 324, ../scss/app.scss */
+/* line 331, ../scss/app.scss */
 .tab-bar .menu-icon.open {
   width: 40px;
   height: 40px;
@@ -9226,7 +9234,7 @@ aside.left-off-canvas-menu {
   content: "";
 }
 
-/* line 332, ../scss/app.scss */
+/* line 339, ../scss/app.scss */
 .tab-bar .menu-icon.open:before, .tab-bar .menu-icon.open:after {
   content: '';
   position: absolute;
@@ -9236,7 +9244,7 @@ aside.left-off-canvas-menu {
   top: 18px;
 }
 
-/* line 341, ../scss/app.scss */
+/* line 348, ../scss/app.scss */
 .tab-bar .menu-icon.open:before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -9244,7 +9252,7 @@ aside.left-off-canvas-menu {
   left: 10px;
 }
 
-/* line 347, ../scss/app.scss */
+/* line 354, ../scss/app.scss */
 .tab-bar .menu-icon.open:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -9252,51 +9260,73 @@ aside.left-off-canvas-menu {
   right: 10px;
 }
 
-/* line 354, ../scss/app.scss */
+/* line 361, ../scss/app.scss */
 tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
   box-shadow: none;
 }
 
-/* line 358, ../scss/app.scss */
+/* line 365, ../scss/app.scss */
 nav.tab-bar {
   max-width: 1360px;
   margin: 0px auto;
   width: 100%;
 }
 
-/* line 364, ../scss/app.scss */
+/* line 371, ../scss/app.scss */
 div#border-top {
   border-bottom: 3px solid #4679BD;
 }
 
-/* line 367, ../scss/app.scss */
+/* line 374, ../scss/app.scss */
 div#border-bottom {
   border-top: 3px solid #4679BD;
 }
 
-/* adjustments for Superfish menus */
-/* line 373, ../scss/app.scss */
+/* adjustments for Horizontal Superfish menus */
+/* line 380, ../scss/app.scss */
 ul#nav-list {
   line-height: 18px !important;
   overflow: visible;
 }
 
-/* line 378, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 ul#nav-list > li {
   background: #ffffff;
 }
 
-/* line 382, ../scss/app.scss */
+/* line 389, ../scss/app.scss */
 ul#nav-list > li:hover {
   background: #CFDEFF none repeat scroll 0% 0%;
 }
 
-/* line 386, ../scss/app.scss */
+/* line 393, ../scss/app.scss */
 ul#nav-list ul ul li, #ul#nav-list ul ul ul li {
   line-height: 18px;
 }
 
-/* line 390, ../scss/app.scss */
+/* adjustments for Vertical Superfish menus */
+/* line 398, ../scss/app.scss */
+aside.left-off-canvas-menu {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+/* line 402, ../scss/app.scss */
+aside.left-off-canvas-menu .sf-menu ul {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+}
+
+/* line 410, ../scss/app.scss */
+ul.off-canvas-list li {
+  width: 250px;
+  float: left !important;
+}
+
+/* line 415, ../scss/app.scss */
 .main-section {
   text-align: left;
   margin: 10px;
