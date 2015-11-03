@@ -1,10 +1,8 @@
-/*
-@import "settings";
-@import "foundation";
-*/
+@import "settings"; //brings in partial _settings.scss
 
-/* inline-lists causes issues with superfish menus e.g. overflow and line-height */
+@import "foundation";
 // Or selectively include components
+/*
 @import
    "foundation/components/accordion",
    "foundation/components/alert-boxes",
@@ -41,10 +39,26 @@
    "foundation/components/type",
    "foundation/components/offcanvas",
    "foundation/components/visibility";
-
+*/
 
 
 /****** SN ADDED ******/
+
+/* addresses breakpoint/scrollbar issue in Firefox 
+http://iamkeir.com/post/26647025450/firefox-media-query-breakpoints-wtf
+*/
+html {
+	overflow:hidden; 
+	height:100%;
+} 
+body {
+	overflow-y:scroll; height:100%;
+	position:relative;
+}
+
+
+
+
 
 .size-12 { font-size: 12px; }
 .size-14 { font-size: 14px; }
@@ -128,6 +142,9 @@
 //	position: absolute !important;
 }
 
+.search-section > div.row {
+	max-width: 100%;
+}
 
 
 
@@ -149,12 +166,13 @@ a.search-icon-link .fi-magnifying-glass {
 
 
 
-ul#search-button-list {
+ul#icon-button-list {
 	line-height: 46px;
 	margin: 0rem;
+	position: relative;
 }
 
-ul#search-button-list li {
+ul#icon-button-list li {
 	margin: 0px;
 }
 
@@ -164,6 +182,10 @@ a#search-button {
 	width: 60px;
 }
 
+a#sign-in-button {
+	color: #000000;
+	width: 25px;
+}
 
 /* Create Focus Triangle on search icon */
 
@@ -288,40 +310,57 @@ background:  #4679BD none repeat scroll 0% 0%;
 
 .tab-bar-section.middle {
 	padding-left: .25rem;
+	background: #FFFFFF none repeat scroll;
 }
 
 //@media only screen and (min-width: 40.0625em) { 
-@media only screen and (min-width: 63.313em) { 
-
+//@media only screen and (min-width: em-calc(908)) { 
+@media #{$medium-up} { 
 	.tab-bar-section.middle {
   		left: 0rem;
 		right: 0rem;
 		padding-left: .25rem;
+		background: #FFFFFF none repeat scroll;
 	}
 	
+/*
 	.search-section {
 		display: none !important;
 	}	
+*/
 
 	/* to handle expanded browser when left-off-canvas is already open */
 	.move-right > .inner-wrap {
     	transform: none;
+		-webkit-transform: none;
 	}
 }	
 	
 
 .tab-bar-section div#logo {
 	padding: 2px 0px !important;
+	background: #ffffff none repeat scroll 0% 0%;
+	height: 2.8125rem;
 }
 
+/* manage headphone image display via media query below */
 .tab-bar-section div#logo img#headphone-logo {
 	vertical-align: top;
+	display: none;
 }
 
 .tab-bar-section div#logo img#letters-logo {
 	vertical-align: middle;
 	padding-bottom: .75rem;
 }
+
+/* display headphone image only when viewport > 405px */
+@media only screen and (min-width: em-calc(405)) {
+	.tab-bar-section div#logo img#headphone-logo {
+		display: inline-block;
+	}
+} 
+
 
 
 .tab-bar .menu-icon span::after {
@@ -380,6 +419,7 @@ div#border-bottom {
 ul#nav-list {
 	line-height: 18px !important;
 	overflow: visible;
+	padding-left: 16px;
 }
 
 ul#nav-list > li {
@@ -418,3 +458,9 @@ ul.off-canvas-list li {
 	padding: 0.5rem 1rem;
 	min-height: 300px;
 }
+
+
+ul.off-canvas-list li label {
+	cursor: default !important;
+}
+

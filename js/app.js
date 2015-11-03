@@ -4,8 +4,8 @@ $(document).foundation();
 
 /* menu icon toggle */
 $(".tab-bar .menu-icon").click(function() {
-	$(this).toggleClass( "open" );
-	$("#menu-icon-section").toggleClass("open");
+//	$(this).toggleClass( "open" );
+//	$("#menu-icon-section").toggleClass("open");
 });
 
 
