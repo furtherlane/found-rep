@@ -47,6 +47,7 @@
 /* addresses breakpoint/scrollbar issue in Firefox 
 http://iamkeir.com/post/26647025450/firefox-media-query-breakpoints-wtf
 */
+/*
 html {
 	overflow:hidden; 
 	height:100%;
@@ -55,7 +56,7 @@ body {
 	overflow-y:scroll; height:100%;
 	position:relative;
 }
-
+*/
 
 
 
@@ -278,18 +279,6 @@ box-shadow: none !important;
     width: 100%;
 }
 
-/* CSS FOR MENU "X" */
-
-#menu-icon-section.left-small.open {
-    background: #4679BD none repeat scroll 0% 0%;
-}
-
-#menu-label {
-    background: #4679BD none repeat scroll 0% 0%;
-    color: #FFFFFF;
-    padding: 15px;
-    cursor: default !important;
-}
 
 .left-small {
 border: none !important;
@@ -303,9 +292,6 @@ background:  #4679BD none repeat scroll 0% 0%;
 //Modify tab-bar color
 .tab-bar {
 	background: #FFFFFF none repeat scroll;
-//	border-top: 3px solid rgb(70, 121, 189);
-//	border-bottom: 3px solid rgb(70, 121, 189);
-//	height: 3.1rem !important;
 }
 
 .tab-bar-section.middle {
@@ -313,8 +299,6 @@ background:  #4679BD none repeat scroll 0% 0%;
 	background: #FFFFFF none repeat scroll;
 }
 
-//@media only screen and (min-width: 40.0625em) { 
-//@media only screen and (min-width: em-calc(908)) { 
 @media #{$medium-up} { 
 	.tab-bar-section.middle {
   		left: 0rem;
@@ -323,16 +307,12 @@ background:  #4679BD none repeat scroll 0% 0%;
 		background: #FFFFFF none repeat scroll;
 	}
 	
-/*
-	.search-section {
-		display: none !important;
-	}	
-*/
-
 	/* to handle expanded browser when left-off-canvas is already open */
 	.move-right > .inner-wrap {
-    	transform: none;
+		-ms-transform: none;
+		-moz-transform: none;
 		-webkit-transform: none;
+    	transform: none;
 	}
 }	
 	
@@ -385,12 +365,14 @@ background:  #4679BD none repeat scroll 0% 0%;
 }
 
 .tab-bar .menu-icon.open:before{
+	-ms-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
     transform:rotate(45deg);
     left:10px;
 }
 .tab-bar .menu-icon.open:after{
+	-ms-transform:rotate(-45deg);
     -webkit-transform:rotate(-45deg);
     -moz-transform:rotate(-45deg);
     transform:rotate(-45deg);
@@ -462,5 +444,47 @@ ul.off-canvas-list li {
 
 ul.off-canvas-list li label {
 	cursor: default !important;
+}
+
+
+/* Menu Close "X" */
+
+div.hamburger-helper {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+.hamburger-top-bar, .hamburger-middle-bar, .hamburger-bottom-bar {
+	background-color: #000;
+	width: 20px;
+	height: 4px;
+	margin: 3px 0px 3px 10px;
+	transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0;
+}
+
+.hamburger-top-bar, .hamburger-bottom-bar {
+	-ms-transform-origin: 100% 50% 0px;
+	-webkit-transform-origin: 100% 50% 0px;
+	transform-origin: 100% 50% 0px;
+}
+
+
+.hamburger-top-bar.close {
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);	
+	transform: rotate(-45deg);	
+}
+
+.hamburger-middle-bar.close {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+
+.hamburger-bottom-bar.close {
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);	
+	 transform: rotate(45deg);
 }
 

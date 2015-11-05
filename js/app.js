@@ -4,8 +4,9 @@ $(document).foundation();
 
 /* menu icon toggle */
 $(".tab-bar .menu-icon").click(function() {
-//	$(this).toggleClass( "open" );
-//	$("#menu-icon-section").toggleClass("open");
+	$(".hamburger-top-bar").toggleClass("close");
+	$(".hamburger-middle-bar").toggleClass("close");
+	$(".hamburger-bottom-bar").toggleClass("close");
 });
 
 

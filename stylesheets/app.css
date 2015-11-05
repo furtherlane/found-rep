@@ -9481,77 +9481,74 @@ th.hide-for-touch {
 /* addresses breakpoint/scrollbar issue in Firefox 
 http://iamkeir.com/post/26647025450/firefox-media-query-breakpoints-wtf
 */
-/* line 50, ../scss/app.scss */
+/*
 html {
-  overflow: hidden;
-  height: 100%;
-}
-
-/* line 54, ../scss/app.scss */
+	overflow:hidden; 
+	height:100%;
+} 
 body {
-  overflow-y: scroll;
-  height: 100%;
-  position: relative;
+	overflow-y:scroll; height:100%;
+	position:relative;
 }
-
-/* line 63, ../scss/app.scss */
+*/
+/* line 64, ../scss/app.scss */
 .size-12 {
   font-size: 12px;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .size-14 {
   font-size: 14px;
 }
 
-/* line 65, ../scss/app.scss */
+/* line 66, ../scss/app.scss */
 .size-16 {
   font-size: 16px;
 }
 
-/* line 66, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 .size-18 {
   font-size: 18px;
 }
 
-/* line 67, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .size-21 {
   font-size: 21px;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .size-24 {
   font-size: 24px;
 }
 
-/* line 69, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .size-36 {
   font-size: 36px;
 }
 
-/* line 70, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 .size-48 {
   font-size: 48px;
 }
 
-/* line 71, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .size-60 {
   font-size: 60px;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .size-72 {
   font-size: 72px;
 }
 
-/* line 75, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .ad-section div.ad-wrap img {
   display: block;
   margin: auto;
   padding: 0px;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .message-section {
   background-color: #A4C639;
   color: #546B0A;
@@ -9567,13 +9564,13 @@ body {
   width: 100%;
 }
 
-/* line 97, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .message-section div.message {
   position: absolute;
   padding: 0px 16px;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .highlight-section {
   background-color: #FFFF00;
   color: #000000;
@@ -9589,13 +9586,13 @@ body {
   width: 100%;
 }
 
-/* line 118, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 .highlight-section div.highlight {
   position: absolute;
   padding: 0px 16px;
 }
 
-/* line 125, ../scss/app.scss */
+/* line 126, ../scss/app.scss */
 .search-section {
   background: #333 none repeat scroll 0% 0%;
   margin-left: 0px;
@@ -9605,7 +9602,7 @@ body {
   height: 39px;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 .search-section.noshow {
   background: #333 none repeat scroll 0% 0%;
   margin-left: 0px;
@@ -9615,55 +9612,55 @@ body {
   height: 0px;
 }
 
-/* line 145, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .search-section > div.row {
   max-width: 100%;
 }
 
-/* line 151, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .search-section div ul {
   margin: 0rem;
   list-style: none;
 }
 
-/* line 157, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .search-icon-link {
   width: 45px;
   height: 45px;
   padding-left: 7px;
 }
 
-/* line 163, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 a.search-icon-link .fi-magnifying-glass {
   color: #ffffff;
 }
 
-/* line 169, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 ul#icon-button-list {
   line-height: 46px;
   margin: 0rem;
   position: relative;
 }
 
-/* line 175, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 ul#icon-button-list li {
   margin: 0px;
 }
 
-/* line 179, ../scss/app.scss */
+/* line 180, ../scss/app.scss */
 a#search-button {
   color: #000000;
   width: 60px;
 }
 
-/* line 185, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 a#sign-in-button {
   color: #000000;
   width: 25px;
 }
 
 /* Create Focus Triangle on search icon */
-/* line 192, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 a#search-button:before, a#search-button:after {
   content: " ";
   height: 0px;
@@ -9672,12 +9669,12 @@ a#search-button:before, a#search-button:after {
   z-index: 2;
 }
 
-/* line 201, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 a#search-button.no-triangle i {
   padding-left: 20px !important;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 207, ../scss/app.scss */
 a#search-button.triangle:before {
   content: " ";
   height: 0px;
@@ -9690,7 +9687,7 @@ a#search-button.triangle:before {
   left: 35%;
 }
 
-/* line 219, ../scss/app.scss */
+/* line 220, ../scss/app.scss */
 a#search-button.triangle:after {
   content: " ";
   height: 0px;
@@ -9704,7 +9701,7 @@ a#search-button.triangle:after {
   bottom: -6px;
 }
 
-/* line 237, ../scss/app.scss */
+/* line 238, ../scss/app.scss */
 i#search {
   font-size: 28px;
   position: relative;
@@ -9717,32 +9714,32 @@ i#search {
 }
 
 /* STYLE INPUT PLACEHOLDER */
-/* line 249, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 input:-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 250, ../scss/app.scss */
+/* line 251, ../scss/app.scss */
 ::-webkit-input-placeholder {
   color: #4C4C4C;
 }
 
-/* line 251, ../scss/app.scss */
+/* line 252, ../scss/app.scss */
 :-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 254, ../scss/app.scss */
+/* line 255, ../scss/app.scss */
 ::-moz-placeholder {
   color: #4C4C4C;
 }
 
-/* line 257, ../scss/app.scss */
+/* line 258, ../scss/app.scss */
 :-ms-input-placeholder {
   color: #4C4C4C;
 }
 
-/* line 263, ../scss/app.scss */
+/* line 264, ../scss/app.scss */
 input[type='text'].search-bar {
   background: #FFF none repeat scroll 0% 0%;
   border: 0px none;
@@ -9758,44 +9755,30 @@ input[type='text'].search-bar {
   width: 100%;
 }
 
-/* CSS FOR MENU "X" */
 /* line 283, ../scss/app.scss */
-#menu-icon-section.left-small.open {
-  background: #4679BD none repeat scroll 0% 0%;
-}
-
-/* line 287, ../scss/app.scss */
-#menu-label {
-  background: #4679BD none repeat scroll 0% 0%;
-  color: #FFFFFF;
-  padding: 15px;
-  cursor: default !important;
-}
-
-/* line 294, ../scss/app.scss */
 .left-small {
   border: none !important;
   position: absolute !important;
 }
 
-/* line 299, ../scss/app.scss */
+/* line 288, ../scss/app.scss */
 aside.left-off-canvas-menu {
   background: #4679BD none repeat scroll 0% 0%;
 }
 
-/* line 304, ../scss/app.scss */
+/* line 293, ../scss/app.scss */
 .tab-bar {
   background: #FFFFFF none repeat scroll;
 }
 
-/* line 311, ../scss/app.scss */
+/* line 297, ../scss/app.scss */
 .tab-bar-section.middle {
   padding-left: .25rem;
   background: #FFFFFF none repeat scroll;
 }
 
 @media only screen and (min-width: 57.875em) {
-  /* line 319, ../scss/app.scss */
+  /* line 303, ../scss/app.scss */
   .tab-bar-section.middle {
     left: 0rem;
     right: 0rem;
@@ -9803,19 +9786,16 @@ aside.left-off-canvas-menu {
     background: #FFFFFF none repeat scroll;
   }
 
-  /*
-  	.search-section {
-  		display: none !important;
-  	}	
-  */
   /* to handle expanded browser when left-off-canvas is already open */
-  /* line 333, ../scss/app.scss */
+  /* line 311, ../scss/app.scss */
   .move-right > .inner-wrap {
-    transform: none;
+    -ms-transform: none;
+    -moz-transform: none;
     -webkit-transform: none;
+    transform: none;
   }
 }
-/* line 340, ../scss/app.scss */
+/* line 320, ../scss/app.scss */
 .tab-bar-section div#logo {
   padding: 2px 0px !important;
   background: #ffffff none repeat scroll 0% 0%;
@@ -9823,13 +9803,13 @@ aside.left-off-canvas-menu {
 }
 
 /* manage headphone image display via media query below */
-/* line 347, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 .tab-bar-section div#logo img#headphone-logo {
   vertical-align: top;
   display: none;
 }
 
-/* line 352, ../scss/app.scss */
+/* line 332, ../scss/app.scss */
 .tab-bar-section div#logo img#letters-logo {
   vertical-align: middle;
   padding-bottom: .75rem;
@@ -9837,17 +9817,17 @@ aside.left-off-canvas-menu {
 
 /* display headphone image only when viewport > 405px */
 @media only screen and (min-width: 25.3125em) {
-  /* line 359, ../scss/app.scss */
+  /* line 339, ../scss/app.scss */
   .tab-bar-section div#logo img#headphone-logo {
     display: inline-block;
   }
 }
-/* line 366, ../scss/app.scss */
+/* line 346, ../scss/app.scss */
 .tab-bar .menu-icon span::after {
   box-shadow: 0px 0px 0px 2px #000, 0px 7px 0px 2px #000, 0px 14px 0px 2px #000;
 }
 
-/* line 370, ../scss/app.scss */
+/* line 350, ../scss/app.scss */
 .tab-bar .menu-icon.open {
   width: 40px;
   height: 40px;
@@ -9856,7 +9836,7 @@ aside.left-off-canvas-menu {
   content: "";
 }
 
-/* line 378, ../scss/app.scss */
+/* line 358, ../scss/app.scss */
 .tab-bar .menu-icon.open:before, .tab-bar .menu-icon.open:after {
   content: '';
   position: absolute;
@@ -9866,75 +9846,77 @@ aside.left-off-canvas-menu {
   top: 18px;
 }
 
-/* line 387, ../scss/app.scss */
+/* line 367, ../scss/app.scss */
 .tab-bar .menu-icon.open:before {
+  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 10px;
 }
 
-/* line 393, ../scss/app.scss */
+/* line 374, ../scss/app.scss */
 .tab-bar .menu-icon.open:after {
+  -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
   right: 10px;
 }
 
-/* line 400, ../scss/app.scss */
+/* line 382, ../scss/app.scss */
 tab-bar .menu-icon.open span::before, .tab-bar .menu-icon.open span::after {
   box-shadow: none;
 }
 
-/* line 404, ../scss/app.scss */
+/* line 386, ../scss/app.scss */
 nav.tab-bar {
   max-width: 1360px;
   margin: 0px auto;
   width: 100%;
 }
 
-/* line 410, ../scss/app.scss */
+/* line 392, ../scss/app.scss */
 div#border-top {
   border-bottom: 3px solid #4679BD;
 }
 
-/* line 413, ../scss/app.scss */
+/* line 395, ../scss/app.scss */
 div#border-bottom {
   border-top: 3px solid #4679BD;
 }
 
 /* adjustments for Horizontal Superfish menus */
-/* line 419, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 ul#nav-list {
   line-height: 18px !important;
   overflow: visible;
   padding-left: 16px;
 }
 
-/* line 425, ../scss/app.scss */
+/* line 407, ../scss/app.scss */
 ul#nav-list > li {
   background: #ffffff;
 }
 
-/* line 429, ../scss/app.scss */
+/* line 411, ../scss/app.scss */
 ul#nav-list > li:hover {
   background: #CFDEFF none repeat scroll 0% 0%;
 }
 
-/* line 433, ../scss/app.scss */
+/* line 415, ../scss/app.scss */
 ul#nav-list ul ul li, #ul#nav-list ul ul ul li {
   line-height: 18px;
 }
 
 /* adjustments for Vertical Superfish menus */
-/* line 438, ../scss/app.scss */
+/* line 420, ../scss/app.scss */
 aside.left-off-canvas-menu {
   overflow-x: visible !important;
   overflow-y: visible !important;
 }
 
-/* line 442, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 aside.left-off-canvas-menu .sf-menu ul {
   position: absolute;
   display: none;
@@ -9943,13 +9925,13 @@ aside.left-off-canvas-menu .sf-menu ul {
   z-index: 99;
 }
 
-/* line 450, ../scss/app.scss */
+/* line 432, ../scss/app.scss */
 ul.off-canvas-list li {
   width: 250px;
   float: left !important;
 }
 
-/* line 455, ../scss/app.scss */
+/* line 437, ../scss/app.scss */
 .main-section {
   text-align: left;
   margin: 10px;
@@ -9957,7 +9939,52 @@ ul.off-canvas-list li {
   min-height: 300px;
 }
 
-/* line 463, ../scss/app.scss */
+/* line 445, ../scss/app.scss */
 ul.off-canvas-list li label {
   cursor: default !important;
+}
+
+/* Menu Close "X" */
+/* line 452, ../scss/app.scss */
+div.hamburger-helper {
+  position: absolute;
+  top: 10px;
+  left: 4px;
+}
+
+/* line 458, ../scss/app.scss */
+.hamburger-top-bar, .hamburger-middle-bar, .hamburger-bottom-bar {
+  background-color: #000;
+  width: 20px;
+  height: 4px;
+  margin: 3px 0px 3px 10px;
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0;
+}
+
+/* line 466, ../scss/app.scss */
+.hamburger-top-bar, .hamburger-bottom-bar {
+  -ms-transform-origin: 100% 50% 0px;
+  -webkit-transform-origin: 100% 50% 0px;
+  transform-origin: 100% 50% 0px;
+}
+
+/* line 473, ../scss/app.scss */
+.hamburger-top-bar.close {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 479, ../scss/app.scss */
+.hamburger-middle-bar.close {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+/* line 485, ../scss/app.scss */
+.hamburger-bottom-bar.close {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
